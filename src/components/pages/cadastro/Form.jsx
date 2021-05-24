@@ -17,17 +17,15 @@ const Form  = (props) => {
         <form className='form' onSubmit={handleSubmit}>
         <input
         value = {datafim}
-        type="data"
+        type="date"
          onChange={e => setDatafim(e.target.value)}
           />
         <input type="date" 
         onChange={e => setDatainicio(e.target.value)}
         />
-        <select  onChange={e => setCurso(e.target.value)}>
-        {props.cursos.map(curso =>
-        <option key={curso.name}>{curso.name}</option>)
-        }
-        </select>
+        <input type="text" 
+        onChange={e => setCurso(e.target.value)}
+        />
         <button >Salvar</button>
         </form> 
          );

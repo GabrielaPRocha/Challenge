@@ -12,9 +12,9 @@ const CardCurso =({curso})=>{
             <div className="card-detail">
                 <span className="material-icons">star</span>
                 9,5
-              <h1>{cards.curso}</h1>
-              <h2>{cards.datainicio}</h2>
-              <p>{cards.datafim}</p>
+              <h1>{Card.curso}</h1>
+              <h2>{Card.datainicio}</h2>
+              <p>{Card.datafim}</p>
             </div>
             <a href="#" className="btn-detail">
                 <span className="material-icons">add_circle</span>

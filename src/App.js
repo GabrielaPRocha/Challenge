@@ -15,10 +15,10 @@ import CardCurso from './components/cardCurso/CardCurso';
     cards: [],
     filter:''
 }}
-addCard(curso){
+/*addCard(curso){
   card.id = Date.now() 
   this.setState({cards: [...this.state.cards, card]})
-  }
+  }*/
   addCurso(curso){
      this.setState({cursos: [...this.state.cursos, curso]})
     }
