@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.App
+{
+ background-color: rgb(83, 81, 81);
+ min-height:100vh;
+ text-align: center;
+}
+.content{
+    display:flex;
+}
+.nav-link{
+    color:rgb(218, 18, 18);
+    font-weight: bold;
+    font-size:25px;
+    margin:20px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    opacity: .7;
+}
+.nav-link.active{
+    opacity:1;
+    border-bottom: solid 1px #0000;
+}

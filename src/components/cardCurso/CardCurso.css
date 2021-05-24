@@ -1,0 +1,36 @@
+.card-curso{
+    color:black;
+    background-color: rgb(235, 230, 230);
+    max-width: 220px;
+    border-radius: 10px;
+    font-family: 'Roboto',sans-serif;
+    margin:15px;
+    font-size: medium;
+}
+.curso-imagem{
+    background-image: url('https://cdn.pixabay.com/photo/2015/05/15/14/38/telephone-booth-768610_960_720.jpg');
+    padding:110px;
+    border-radius:10px 10px 0px 0px;
+    background-repeat: no-repeat;
+}
+.card-detail{
+    text-align: left;
+    padding:10px;
+}
+.card-detail span{
+color:rgb(204, 204, 18);
+}
+
+.card-detail h2{
+    font-size:.7em;
+}
+.btn-detail{
+    background-color:rgb(245, 80, 80);
+    color:rgb(216, 201, 201);
+    display:flex;
+    margin:10px;
+    border-radius: 20px;
+    justify-content: center;
+    padding: 3px;
+    text-decoration: none;
+}

@@ -1,0 +1,44 @@
+.Header{
+    background-color:rgb(245, 80, 80);
+    display:flex;
+    padding: 2rem;
+    justify-content: space-between;
+  }
+  
+  .Logo{
+    background: rgb(223, 211, 211);
+    border-radius: 47px;
+    font-family: Anton, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.165em;
+    padding: 10px 30px;
+    color:#ffff;
+    box-shadow: -2px -2px 10px  rgb(0, 0, 0),
+    -2px -2px 10px   rgb(0, 0, 0);
+  }
+.Header form input{
+  background-color:rgb(223, 211, 211) ;
+    border-radius: 10px;
+    border:0;
+    width:400px;
+    height: 2rem;
+    margin:0 10px;
+    font-family:Roboto;
+    font-size:20px;
+}
+.Header form button{
+  background-color: rgb(223, 211, 211);
+  border: none;
+  border-radius: 10px;
+  height: 2rem;
+  width: 100px;
+  font-family: Anton, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  cursor: pointer;
+  color:red;
+  box-shadow: -8px -8px 5px  rgb(0, 0, 0),
+  -8px -8px 5px   rgb(0, 0, 0);
+}
