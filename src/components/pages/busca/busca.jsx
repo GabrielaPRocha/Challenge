@@ -1,29 +1,19 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, {useState } from 'react'
 
-import CardCurso from "../../components/CardCurso/CardCurso"
+import CardCurso from "../../cardCurso/CardCurso";
+import Form from '../../pages/cadastro/Form';
+import Header from '../../header/Header'
 
-export default function Busca(props) {
-
-    const [cursos, setCursos] = useState([])
-
-    useEffect(() => { load() }, [props.location.search] )
-
-    async function load(){
-        try{
-            const resposta = await id.search
-            setCursos(resposta.data.results)
-            console.log(props.location)
-        }catch(erro){
-            console.log(erro)
+const Busca = ({children,tofind}) => {
+const regex = new RegExp (`(${tofind})`, 'i')
+    return children.split(regex).map((chunk, index) =>{
+        if (lower(chunk) === lower(tofind)){
+            return (CardCurso)
         }
-    }
-
-    return (
-        <Fragment>
-            <div className="content">
-                {cursos.map( (curso => <CardCurso key={curso.id} curso={curso} />))}
-            </div>
-        </Fragment>
-    );
-
+        return chunk
+    })
 }
+function lower(string){
+    return string.toLowerCase()
+}
+export default Busca;

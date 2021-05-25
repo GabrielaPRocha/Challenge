@@ -1,25 +1,25 @@
 import React,{useState} from 'react'
-import {withRouter} from 'react-router-dom'
+//import {withRouter} from 'react-router-dom'
 import "./Header.css"
-
-function Header(props){
-    const [search,setSearch] = useState("");
+import Busca from '../../components/pages/busca/busca.jsx'
+const Header =() => {
+    const[card,setCard] = useState('')
     
-    function buscar(e){
-        e.preventDefault()
-        props.history.push("/busca")
-    }
+   function handleChange(e){
+         setCard(e.target.value)
+       }
     return(
         <div className="Header">
             <div className="Logo">AllyCursos</div>
-            <form onSubmit={buscar}>
+            <form onSubmit={card}>
             <input type="text"
              name ="search" 
              id="search"
-              onChange={e=>setSearch(e.target.value)}/>
+             value={card}
+              onChange={handleChange} />
             <button type="submit">Buscar</button>
             </form>
         </div>
     );
 }
-export default withRouter(Header)
+export default Header

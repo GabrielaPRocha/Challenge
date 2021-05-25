@@ -1,10 +1,9 @@
 import React from 'react';
 import { useState } from 'react';
-
 const Form  = (props) => {
-       const [datafim,setDatafim] = useState();
-       const [datainicio,setDatainicio] = useState();
-       const [curso, setCurso] = useState();      
+       const [datafim,setDatafim] = useState('');
+       const [datainicio,setDatainicio] = useState('');
+       const [curso, setCurso] = useState('');      
        
        const handleSubmit = e =>{
 
