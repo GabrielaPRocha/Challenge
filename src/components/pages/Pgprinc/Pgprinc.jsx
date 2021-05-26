@@ -6,8 +6,6 @@ export default function Pgprinc(){
     return(
         <div className="content">
             <CardCurso/>
-            <CardCurso/>
-            <CardCurso/>
         </div>
     );
 }

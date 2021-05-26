@@ -1,4 +1,4 @@
-import React,{Component,useEffect,useState} from 'react';
+import React from 'react';
 import './App.css';
 import {BrowserRouter,Switch,Route,NavLink} from 'react-router-dom'
 
@@ -7,24 +7,9 @@ import Sobre from "./components/pages/sobre/Sobre";
 import Header from "./components/header/Header";
 import Form from './components/pages/cadastro/Form';
 import CardCurso from './components/cardCurso/CardCurso';
-//function App(){
-  class App extends Component {
-    constructor(){
-    super()
-    this.state = {
-    cards: [],
-    filter:''
-}}
-/*addCard(curso){
-  card.id = Date.now() 
-  this.setState({cards: [...this.state.cards, card]})
-  }*/
-  addCurso(curso){
-     this.setState({cursos: [...this.state.cursos, curso]})
-    }
-  render(){
+function App(){
   return (
-    <>
+    
     <div className="App">   
       <BrowserRouter>
       <Header/>
@@ -39,19 +24,6 @@ import CardCurso from './components/cardCurso/CardCurso';
       </Switch>
       </BrowserRouter>
     </div>
-     <section className="card">
-     {this.state.cards
-     .filter(
-        card =>
-         card.curso === this.state.filter || this.state.filter ==='')
-     .map((card) => (
-     <CardCurso
-     key={card.id}
-     card={card} />
-     ))}
-</section>
-</>
   );
-}
 }
 export default App;

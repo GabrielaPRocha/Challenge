@@ -11,13 +11,12 @@ const Header =() => {
     return(
         <div className="Header">
             <div className="Logo">AllyCursos</div>
-            <form onSubmit={card}>
+            <form >
             <input type="text"
              name ="search" 
              id="search"
-             value={card}
               onChange={handleChange} />
-            <button type="submit">Buscar</button>
+            <button >Buscar</button>
             </form>
         </div>
     );
